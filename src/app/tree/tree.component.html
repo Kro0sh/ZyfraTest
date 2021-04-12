@@ -1,0 +1,12 @@
+<p-tree
+  [value]="items"
+  selectionMode="single"
+  (onNodeExpand)="nodeExpand($event)"
+  (onNodeSelect)="nodeSelect($event)"
+  [(selection)]="selectedNode"
+  [loading]="loading"
+>
+  <ng-template let-node pTemplate="default">
+    <b>{{node.name}}</b>
+  </ng-template>
+</p-tree>
