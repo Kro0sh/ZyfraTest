@@ -1,4 +1,16 @@
-<div class="p-grid">
-    <app-tree></app-tree>
-    <app-data-table></app-data-table>
-</div>
+<p-tabView>
+  <p-tabPanel header="Subscribe">
+    <div class="p-grid">
+      <app-tree></app-tree>
+      <app-data-table></app-data-table>
+    </div>
+  </p-tabPanel>
+  <p-tabPanel header="Emit">
+    <h1>Не доделано. Просто пример работы через <code>EventEmitter<>()</code></h1>
+    <p>Компоненты просто принимают какие-то данные с возможностью переиспользования.</p>
+    <div class="p-grid">
+      <app-tree-two [nodes]="nodes" (selectedNode)="onSelectedItem($event)"></app-tree-two>
+      <app-data-table-two [tableData]="selectedItem"></app-data-table-two>
+    </div>
+  </p-tabPanel>
+</p-tabView>

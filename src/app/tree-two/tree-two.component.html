@@ -1,0 +1,10 @@
+<p-tree
+  [value]="nodes"
+  selectionMode="single"
+  (onNodeSelect)="nodeSelect($event)"
+  [(selection)]="currentNode"
+>
+  <ng-template let-node pTemplate="default">
+    <b>{{node.name}}</b>
+  </ng-template>
+</p-tree>

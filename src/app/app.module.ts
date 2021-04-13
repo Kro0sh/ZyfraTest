@@ -8,15 +8,19 @@ import { TreeModule } from 'primeng/tree';
 import { TreeComponent } from './tree/tree.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { TableModule } from 'primeng/table';
+import {TabViewModule} from 'primeng/tabview';
+import { TreeTwoComponent } from './tree-two/tree-two.component';
+import { DataTableTwoComponent } from './data-table-two/data-table-two.component';
 
 @NgModule({
-  declarations: [AppComponent, TreeComponent, DataTableComponent],
+  declarations: [AppComponent, TreeComponent, DataTableComponent, TreeTwoComponent, DataTableTwoComponent],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     TreeModule,
     TableModule,
+    TabViewModule
   ],
   providers: [],
   bootstrap: [AppComponent],
